@@ -1,0 +1,32 @@
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему*/
+
+.page.them_dark {
+  /* Дублируем переменные для тёмной темы */
+  --bg-color: #000028;
+  --bg-image: url(../images/cover-image-dark.png);
+  --title-color: #db00ff;
+  --text-color: #F1B2CE;
+  --sub-color: #000028;
+  --button-color: #ff0070;
+  --accent-color: #ff0070;
+  --hover-color: rgba(255, 0, 112, 0.4);
+  --decor-display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  .page.theme_auto {
+    /* Дублируем переменные для тёмной темы */
+    --bg-color: #000028;
+    --bg-image: url(../images/cover-image-dark.png);
+    --title-color: #db00ff;
+    --text-color: #F1B2CE;
+    --sub-color: #000028;
+    --button-color: #ff0070;
+    --accent-color: #ff0070;
+    --hover-color: rgba(255, 0, 112, 0.4);
+    --decor-display: block;
+    }
+}
